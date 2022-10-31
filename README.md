@@ -60,6 +60,7 @@ This CLI program does the following:
 - Gmail accounts
     - This script assumes that the Confluence Coordinator who runs this script has access to a Google Sheet that lists VIPs who should not be notified about their pages missing alternate text.
     - This script also sends out customized messages to Confluence authors.  This script sends out these messages via a departmental Gmail account, uses smtp.gmail.com to send the message, sends the message via TLS/SSL, and uses [an app password](https://support.google.com/accounts/answer/185833?hl=en) to log in to that Gmail account.
+- [Bob Swift's Atlassian Command Line Interface](https://bobswift.atlassian.net/wiki/x/FQAe) (A free app from the Atlassian Marketplace)
 
 ## Running the program
 
