@@ -35,15 +35,16 @@ This CLI program does the following:
 
 1. Scrapes and identifies public Confluence pages belonging to my organization that have images with missing alternate text.
 1. Composes individualized messages to send to the Confluence authors who've recently updated these public pages.
-    1. This program will not email those I consider VIPs (members of my department, and a few other members from other departments).  This program will reassign those pages to me (or whoever the Confluence Coordinators are). 
-    1. If a public page hasn't been recently updated by an active Confluence author, then this program will reassign those pages to me too (or whoever the Confluence Coordinators are).
+    - This program will not email those I consider VIPs (members of my department, and a few other members from other departments).  This program will reassign those pages to me (or whoever the Confluence Coordinators are). 
+    - If a public page hasn't been recently updated by an active Confluence author, then this program will reassign those pages to me too (or whoever the Confluence Coordinators are).
 1. Emails these individualized messages from a departmental Google account to those Confluence authors.
 
 ## Built with
 
-- Python
+- [Python](https://www.python.org/)
     - [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/getting_started/)
-- SQLite
+- [SQLite](https://www.sqlite.org/index.html)
+    - [SQLiteStudio](https://sqlitestudio.pl/) (not required, but recommended; this download also comes with SQLite too)
 - [Bob Swift's Atlassian Command Line Interface](https://bobswift.atlassian.net/wiki/x/FQAe)
 
 # Getting Started
@@ -54,30 +55,29 @@ This CLI program does the following:
     - This program should theoretically work on Windows and Mac too, though I haven't tested that yet.
 - Python version -- 3.9.2
 - SQLite version -- 3.35.4 
-- SQL manager -- SQLiteStudio (v3.3.3) (manager not required, but recommended)
+- SQL manager -- SQLiteStudio (v3.3.3)
 - pip3 packages
     - Selenium WebDriver -- 4.5.0
 - Gmail accounts
     - This script assumes that the Confluence Coordinator who runs this script has access to a Google Sheet that lists VIPs who should not be notified about their pages missing alternate text.
     - This script also sends out customized messages to Confluence authors.  This script sends out these messages via a departmental Gmail account, uses smtp.gmail.com to send the message, sends the message via TLS/SSL, and uses [an app password](https://support.google.com/accounts/answer/185833?hl=en) to log in to that Gmail account.
-- [Bob Swift's Atlassian Command Line Interface](https://bobswift.atlassian.net/wiki/x/FQAe) (A free app from the Atlassian Marketplace)
 
 ## Running the program
 
 ### Before running the program (first time only)
 
 - Update the constants in the **/src/sensitive/emailTemplate.py** and **/src/sensitive/keyInfo.py** files.
-    - The values for the variables in these files are currently default values.  They must be changed to fit your specifications, or else this script may crash.
+    - The values for these constants are currently default values.  They must be changed to fit your specifications, or else this script may crash.
 - Update the **/src/sensitive/headerLogo.png** and **/src/sensitive/footerLogo.png** images.  The names of the images need to stay the same, so that they get included in the individualized messages that this script sends to the Confluence authors.
 - Search **/src/run.py** for "FIXME", and change the arg on that line, from 'credsConfCoord.emailAddr' to 'authorAddr'.
     - This script initially sends all emails to the Confluence Coordinator who runs this script.  This way the Coordinator could review the emails if they want to.
-    - Changing this arg will email the individualized messages to their respective Confluence author.
+    - Changing this arg will email the individualized messages to their respective Confluence authors.
 
 ### Running the Python script
 
 Run the **/src/run.py** file.  
 
-The script will prompt you to provide various credentials.  The script will also provide updates as this script runs. 
+The script will eventually prompt you to provide two sets of credentials.  The script will also provide updates as this script runs. 
 
 # Oddities/Side notes
 
@@ -98,7 +98,7 @@ SQLite's official [Datatypes In SQLite](https://www.sqlite.org/datatype3.html) d
 
 ### Version 1.4 and beyond
 
-- [ ] Create a new VMWare VM that runs a stripped down verison of Debian  and only has the necessary programs installed for this script to run (doing this may reduce the attack surface of this script).
+- [ ] Create a new VMWare VM that runs a stripped down verison of Debian and only has the necessary programs installed for this script to run (doing this may reduce the attack surface of this script).
 
 - [ ] Look into a way to use Docker to ship this script to other computers with different OSes.
 
@@ -122,7 +122,7 @@ SQLite's official [Datatypes In SQLite](https://www.sqlite.org/datatype3.html) d
 
 - [x] Search [Synk Advisor](https://snyk.io/advisor/python) for all the Python packages this script uses, to ensure they all receive a high health score (I have noticed that other packages were getting automatically added to this script when I ran it).
 
-- [x] <span style="color:IndianRed">~~Automatically upload messages.csv file to the associated Google Sheet.  (Optionally) Automatically email Confluence authors when the script uploads the messages.csv file to the the Google Sheet~~</span> The script no longer requires the user to upload the custom messges to a Google Sheet.  The script automatically emails the authors using the smtplib, ssl, and some MIME libraries
+- [x] <span style="color:IndianRed">~~Automatically upload messages.csv file to the associated Google Sheet.  (Optionally) Automatically email Confluence authors when the script uploads the messages.csv file to the the Google Sheet~~</span> The script no longer requires the user to upload the custom messges to a Google Sheet.  The script automatically emails the authors using the smtplib, ssl, and some MIME Python libraries
 
 - [x] <span style="color:IndianRed">~~Add stops so that the Python script reminds the user to check the list of VIPs, before continuing to run the program.~~</span>  No longer necessary, since the script now automatically checks for these VIPs before creating and emailing the custom messages
 
@@ -132,7 +132,7 @@ SQLite's official [Datatypes In SQLite](https://www.sqlite.org/datatype3.html) d
 
 - [x] Add checks into the Python script, that ensures that one feature doesn't run before another feature runs.
 
-- [x] Update the Python script so that it checks to see if the webscraper.db exists.  If the db exists, then the Python script should continue running .  If it doesn't, then the script should create the db.
+- [x] Update the Python script so that it checks to see if the webscraper.db exists.  If the db exists, then the Python script should continue running.  If it doesn't, then the script should create the db.
 
 - [x] <span style="color:IndianRed">~~Update Python script, so that it checks to see if the Python script has been run once already.  Store that boolean in the db.~~</span>  No longer necessary, because 1) this script uses Bob Swift's Atlassian Command Line Interface, and 2) the overall logic of the codebase is more efficient.
 
