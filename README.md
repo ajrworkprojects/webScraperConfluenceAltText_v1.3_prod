@@ -69,7 +69,7 @@ This is the third iteration of this project.
 
 ### Before running the program (first time only)
 
-- Update the constants in the [/src/sensitive/emailTemplate.py]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/emailTemplate.py)) and [/src/sensitive/keyInfo.py]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/keyInfo.py)) files.
+- Update the constants in the [/src/sensitive/emailTemplate.py](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/emailTemplate.py) and [/src/sensitive/keyInfo.py]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/keyInfo.py)) files.
     - The values for these constants are currently default values.  They must be changed to fit your specifications, or else this script may crash.
 - Update the [/src/sensitive/headerLogo.png]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/headerLogo.png)) and [/src/sensitive/footerLogo.png]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/footerLogo.png)) images.  The names of the images need to stay the same, so that they get included in the individualized messages that this script sends to the Confluence authors.
 - Search [/src/run.py]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/run.py)) for "FIXME", and change the argument on that line, from 'credsConfCoord.emailAddr' to 'authorAddr'.
