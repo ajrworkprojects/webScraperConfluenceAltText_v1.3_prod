@@ -27,7 +27,7 @@
 
 ## The solution
 
-Around April 2022, I [watched a YouTuber explain what a webscraper is](https://www.youtube.com/watch?v=Gf1QaBReA2I).  I had never heard of webscraping before, and after I saw that, I knew exactly what my first real-world coding project would be.
+Around April 2022, I got lucky and [watched a YouTuber explain what a webscraper is](https://www.youtube.com/watch?v=Gf1QaBReA2I).  I had never heard of webscraping before, and after I saw that, I knew exactly what my first real-world coding project would be.
 
 This CLI program does the following:
 
