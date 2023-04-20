@@ -41,8 +41,11 @@ This is the third iteration of this project.
 
 ## Built with
 
-- [Python](https://www.python.org/)
+- [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+- [Debian](https://www.debian.org/distrib/netinst)
+- [Python](https://www.python.org/downloads/)
     - [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/getting_started/)
+    - [pip](https://docs.python.org/3/installing/index.html)
 - [SQLite](https://www.sqlite.org/index.html)
     - [SQLiteStudio](https://sqlitestudio.pl/) (not required, but recommended)
 - [Bob Swift's Atlassian Command Line Interface](https://bobswift.atlassian.net/wiki/x/FQAe)
@@ -70,8 +73,8 @@ This is the third iteration of this project.
     - The values for these constants are currently default values.  They must be changed to fit your specifications, or else this script may crash.
 - Update the [/src/sensitive/headerLogo.png]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/headerLogo.png)) and [/src/sensitive/footerLogo.png]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/sensitive/footerLogo.png)) images.  The names of the images need to stay the same, so that they get included in the individualized messages that this script sends to the Confluence authors.
 - Search [/src/run.py]([url](https://github.com/ajrworkprojects/webScraperConfluenceAltText_v1.3_prod/blob/master/src/run.py)) for "FIXME", and change the argument on that line, from 'credsConfCoord.emailAddr' to 'authorAddr'.
-    - This script initially sends all emails to the Confluence Coordinator who runs this script.  This way the Coordinator could review the emails if they want to.
-    - Changing this arg will email the individualized messages to their respective Confluence authors.
+    - This script initially sends all emails to the Confluence Coordinator who runs this script.  This way the Coordinator could review the emails if they want to (which is encouraged).
+    - Changing this argument will email the individualized messages to their respective Confluence authors.
 
 ### Running the Python script
 
