@@ -35,7 +35,8 @@ This CLI program does the following:
 1. Composes individualized messages to send to the Confluence authors who've recently updated these public pages.
     - This program will not email those I consider VIPs (members of my department, and a few other members from other departments).  This program will reassign those pages to me (or whoever the Confluence Coordinators are). 
     - If a public page hasn't been recently updated by an active Confluence author, then this program will reassign those pages to me too (or whoever the Confluence Coordinators are).
-1. Emails these individualized messages from a departmental Google account to those Confluence authors.
+1. Emails these individualized messages from a departmental Google account to those Confluence authors, asking them to update their pages.
+1. Tracks how long pages have had images with missing alternate text, and reasigns those pages to me (or whoever the Confluence Coordinators are) if those pages have been missing alternate text for 30 days.
 
 This is the third iteration of this project.
 
