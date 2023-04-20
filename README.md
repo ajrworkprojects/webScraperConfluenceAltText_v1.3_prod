@@ -23,11 +23,11 @@
 
 A couple of years ago, I was tasked with manually checking all pages in a public Confluence space, for images that were missing alternate text.  And if I found images missing alternate text, then I had to add this text to those images.
 
-This task is very cumbersome and tedius.  And I eventually want to be a software engineer one day.  Budding software engineers need to complete side projects on their own, and I was struggling to find coding projects that interested me and were within my level of expertise.  I've never completed coding projects on my own before, and I like coding when I know I'm working to actually solve a problem I'm having, or a problem someone else is having.  
+This task is very cumbersome and tedius.  And I eventually want to be a software engineer one day.  Budding software engineers need to complete real-world side projects on their own, and I was struggling to find real-world coding projects that interested me and were within my level of expertise.  I've never completed real-world coding projects on my own before (I've only completed small coding challenges on websites like [CodeWars](https://www.codewars.com/)).  I like coding when I know I'm working to actually solve a problem I'm having, or a problem someone else is having.  
 
 ## The solution
 
-Around April 2022, I [watched a YouTuber explain what a webscraper is](https://www.youtube.com/watch?v=Gf1QaBReA2I).  I had never heard of webscraping before, and after I saw that, I knew exactly what my first coding project would be.
+Around April 2022, I [watched a YouTuber explain what a webscraper is](https://www.youtube.com/watch?v=Gf1QaBReA2I).  I had never heard of webscraping before, and after I saw that, I knew exactly what my first real-world coding project would be.
 
 This CLI program does the following:
 
