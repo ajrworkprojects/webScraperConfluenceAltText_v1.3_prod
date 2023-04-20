@@ -29,8 +29,6 @@ This task is very cumbersome and tedius.  And I eventually want to be a software
 
 Around April 2022, I [watched a YouTuber explain what a webscraper is](https://www.youtube.com/watch?v=Gf1QaBReA2I).  I had never heard of webscraping before, and after I saw that, I knew exactly what my first coding project would be.
 
-This is the third iteration of this project.
-
 This CLI program does the following:
 
 1. Scrapes and identifies public Confluence pages belonging to my organization that have images with missing alternate text.
@@ -38,6 +36,8 @@ This CLI program does the following:
     - This program will not email those I consider VIPs (members of my department, and a few other members from other departments).  This program will reassign those pages to me (or whoever the Confluence Coordinators are). 
     - If a public page hasn't been recently updated by an active Confluence author, then this program will reassign those pages to me too (or whoever the Confluence Coordinators are).
 1. Emails these individualized messages from a departmental Google account to those Confluence authors.
+
+This is the third iteration of this project.
 
 ## Built with
 
