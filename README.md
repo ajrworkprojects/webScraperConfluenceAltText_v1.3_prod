@@ -21,9 +21,9 @@
 
 ## The problem
 
-A couple of years ago, I was tasked with manually checking all pages in a public Confluence space, for images that were missing alternate text.  And if I found images missing alternate text, then I had to add this text to those images.
+A couple of years ago, I was tasked with manually checking all pages in a public Confluence space, for images that were missing alternate text.  And if I found images missing alternate text, then I had to add this text to those images.  This task is very cumbersome and tedius.
 
-This task is very cumbersome and tedius.  And I eventually want to be a software engineer one day.  Budding software engineers need to complete real-world side projects on their own, and I was struggling to find real-world coding projects that interested me and were within my level of expertise.  I've never completed real-world coding projects on my own before (I've only completed small coding challenges on websites like [CodeWars](https://www.codewars.com/)).  I like coding when I know I'm working to actually solve a problem I'm having, or a problem someone else is having.  
+Budding software engineers (such as myself) need to complete real-world side projects on their own.  I was struggling to find real-world coding projects that interested me and were within my level of expertise.  I've never completed real-world coding projects on my own before (I've only completed small coding challenges on websites like [CodeWars](https://www.codewars.com/)).  I like coding when I know I'm working to actually solve a problem I'm having, or a problem someone else is having.   
 
 ## The solution
 
