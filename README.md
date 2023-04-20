@@ -19,7 +19,7 @@
 
 # About the project
 
-## The problem
+## The problems
 
 1. A couple of years ago, I was tasked with manually checking all pages in a public Confluence space, for images that were missing alternate text.  And if I found images missing alternate text, then I had to add this text to those images.  This task is very cumbersome and tedius.
 
