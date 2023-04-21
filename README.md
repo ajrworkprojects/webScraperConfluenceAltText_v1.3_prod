@@ -55,8 +55,8 @@ This is the third iteration of this project.
 
 ## Prerequisites
 
-- OS -- Debian 11 (which was installed on a VM using VMWare Player).
-    - This program should theoretically work on Windows and Mac too, though I haven't tested that yet.
+- OS -- Debian 11 (which was installed on a VM using VMWare Player 17).
+    - This Python script should theoretically work on Windows and Mac too, though I haven't tested that yet.
 - Python version -- 3.9.2
 - SQLite version -- 3.35.4 
 - SQL manager -- SQLiteStudio (v3.3.3)
