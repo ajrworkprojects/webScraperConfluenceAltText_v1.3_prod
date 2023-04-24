@@ -5,7 +5,8 @@
     3. [Built with](#built-with)
 2. [Getting Started](#getting-started)
     1. [Prerequisites](#prerequisites)
-    2. [Running the program](#installation-running-the-program)
+        1. [Gmail accounts](#gmail-accounts)
+    3. [Running the program](#installation-running-the-program)
         1. [Before running the program (first time only)](#before-running-the-program-first-time-only)
         2. [Running the Python script](#running-the-python-script)
 3. [Oddities/Side notes](#odditiesside-notes)
@@ -55,9 +56,11 @@ This is the third iteration of this project.
 
 ## Prerequisites
 
-- Gmail accounts
-    - This script assumes that the Confluence Coordinator who runs this script has access to a Google Sheet that lists VIPs who should not be notified about their pages missing alternate text.
-    - This script also sends out customized messages to Confluence authors.  This script sends out these messages via a departmental Gmail account, uses smtp.gmail.com to send the message, sends the message via TLS/SSL, and uses [an app password](https://support.google.com/accounts/answer/185833?hl=en) to log in to that Gmail account.
+### Gmail accounts
+
+This script assumes that the Confluence Coordinator who runs this script has access to a Google Sheet that lists VIPs who should not be notified about their pages missing alternate text.
+
+This script also sends out customized messages to Confluence authors.  This script sends out these messages via a departmental Gmail account, uses smtp.gmail.com to send the message, sends the message via TLS/SSL, and uses [an app password](https://support.google.com/accounts/answer/185833?hl=en) to log in to that Gmail account.
 
 ## Running the program
 
