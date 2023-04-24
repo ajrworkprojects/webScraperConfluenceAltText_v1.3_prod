@@ -42,26 +42,19 @@ This is the third iteration of this project.
 
 ## Built with
 
-- [VMware Workstation Player](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
-- [Debian](https://www.debian.org/distrib/netinst)
-- [Python](https://www.python.org/downloads/)
-    - [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/getting_started/)
+- [VMware Workstation Player (v17)](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+- [Debian (v11.6)](https://www.debian.org/distrib/netinst)
+- [Python (v3.9.2)](https://www.python.org/downloads/)
+    - [Selenium WebDriver (v4.5.0)](https://www.selenium.dev/documentation/webdriver/getting_started/)
     - [pip](https://docs.python.org/3/installing/index.html)
-- [SQLite](https://www.sqlite.org/index.html)
-    - [SQLiteStudio](https://sqlitestudio.pl/) (not required, but recommended)
+- [SQLite (v3.35.4)](https://www.sqlite.org/index.html)
+    - [SQLiteStudio (v3.3.3)](https://sqlitestudio.pl/) (not required, but recommended)
 - [Bob Swift's Atlassian Command Line Interface](https://bobswift.atlassian.net/wiki/x/FQAe)
 
 # Getting Started
 
 ## Prerequisites
 
-- OS -- Debian 11 (which was installed on a VM using VMWare Player 17).
-    - This Python script should theoretically work on Windows and Mac too, though I haven't tested that yet.
-- Python version -- 3.9.2
-- SQLite version -- 3.35.4 
-- SQL manager -- SQLiteStudio (v3.3.3)
-- pip3 packages
-    - Selenium WebDriver -- 4.5.0
 - Gmail accounts
     - This script assumes that the Confluence Coordinator who runs this script has access to a Google Sheet that lists VIPs who should not be notified about their pages missing alternate text.
     - This script also sends out customized messages to Confluence authors.  This script sends out these messages via a departmental Gmail account, uses smtp.gmail.com to send the message, sends the message via TLS/SSL, and uses [an app password](https://support.google.com/accounts/answer/185833?hl=en) to log in to that Gmail account.
