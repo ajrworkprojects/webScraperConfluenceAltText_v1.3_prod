@@ -1,6 +1,6 @@
 # Table of Contents
 1. [About the project](#about-the-project)
-    1. [The problem](#the-problem)
+    1. [The problems](#the-problems)
     2. [The solution](#the-solution)
     3. [Built with](#built-with)
 2. [Getting Started](#getting-started)
